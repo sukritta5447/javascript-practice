@@ -57,3 +57,10 @@ const customers = [
     }
 ];
 //อยากเห็นข้อความ "เจนซื้อของทั้งหมดเป็นเงิน 20300 บาท ได้ส่วนลด 1500 บาท ต้องชำระทั้งหมด 18800 บาท"
+console.log(customers.length) // 3
+
+const janeCartTotal = customers[2].cart.airpods + customers[2].cart.charger + customers[2].cart.ipad;
+const janeDiscount = customers[2].coupons[1].discount;
+const janeTotal = janeCartTotal - janeDiscount;
+
+console.log(`เจนซื้อของทั้งหมดเป็นเงิน ${janeCartTotal} บาท ได้ส่วนลด ${janeDiscount} บาท ต้องชำระทั้งหมด ${janeTotal} บาท`)
