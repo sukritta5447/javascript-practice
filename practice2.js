@@ -1,3 +1,4 @@
+// resolved
 const customers = [
     {
         name: "John",
