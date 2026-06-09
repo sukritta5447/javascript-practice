@@ -1,3 +1,5 @@
+// resolved
+
 // อยากเอาตัวเลขที่มี index เป็นเลขคู่ ไปบวก 10 
 // console.log(number[0] + 10) -> 11 มาจาก 1 + 10
 // console.log(number[2] + 10) -> 13 มาจาก 3 + 10
