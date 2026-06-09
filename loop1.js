@@ -1,3 +1,5 @@
+// resolved
+
 /* 
 ให้เขียนโปรแกรมช่วยบริษัท Oat Toy หาว่าตุ๊กตาสีไหนมีจำนวนมากที่สุดในคลัง ณ ตอนนี้ เพื่อที่จะได้นำไปจัดโปรโมชันระบายสินค้า
 
@@ -19,5 +21,17 @@ const toyInventory = [
 // ตัวแปรทด 2 ตัว
 // ตัวแรกเก็บชื่อสินค้า
 // ตัวที่สองเก็บจำนวน 
- 
+let maxProduct = "";
+let maxQuantity = 0;
+
+for (let toy of toyInventory){
+    //console.log(toy.quantity)
+    if (toy.quantity > maxQuantity) {
+        maxQuantity = toy.quantity;
+        maxProduct = toy.product;
+    }
+}
+
+console.log(`สีตุ๊กตาลาบูต๊องที่มากที่สุดคือ ${maxProduct} ${maxQuantity} ตัว`)
+
 // สรุปใช้อะไรระหว่าง for of กับ for loop ธรรมดา 

@@ -1,3 +1,5 @@
+// resolved
+
 /* 
 ให้แสดงคะแนนของนักเรียนแต่ละคนออกมาในรูปแบบ
 ชื่อนักเรียน ได้คะแนน...คะแนน 
@@ -20,3 +22,7 @@ const students = [
         score: 77
     }
 ];
+
+for (let key of students){
+    console.log(`${key.name} ได้คะแนน ${key.score} คะแนน`)
+}

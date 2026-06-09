@@ -1,3 +1,5 @@
+// resolved (need review)
+
 //การเข้าถึงข้อมูลที่ซับซ้อน
 /* 
 ให้แสดงคะแนนวิชาภาษาอังกฤษของนักเรียนแต่ละคนออกมาในรูปแบบ
@@ -34,3 +36,7 @@ const students = [
         ]
     }
 ];
+
+for (let i of students){
+    console.log(`${i.name} ได้คะแนน ${i.scores[1].score} คะแนน `)
+}
